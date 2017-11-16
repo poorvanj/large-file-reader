@@ -1,0 +1,127 @@
+.scan-results p, .scan-results-2 p {
+	font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+.scan-results h2, .scan-results-2 p {
+	font-family: 'Lato', sans-serif;
+	letter-spacing: 1px;
+}
+
+input#files, input#modified {
+    width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.file-path-button {
+	font-size: 12px;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 100;
+    padding: 10px;
+
+    color: white;
+    background-color: black;
+    display: inline-block;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.app-container {
+    padding: 50px;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.results-container {
+	background-color: #eee;
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+#progress_bar {
+    margin: 10px 0;
+    padding: 3px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    clear: both;
+    opacity: 0;
+    -moz-transition: opacity 1s linear;
+    -o-transition: opacity 1s linear;
+    -webkit-transition: opacity 1s linear;
+  }
+  #progress_bar.loading {
+    opacity: 1.0;
+  }
+  #progress_bar .percent {
+    background-color: #99ccff;
+    height: auto;
+    padding: 5px 0px;
+    width: 0;
+  }
+
+div.scan-results {
+    width: 33%;
+    float: left;
+    display: block;
+}
+
+div.scan-results-2 {
+	width: 25%;
+    float: left;
+    display: block;
+}
+
+.results-container {
+    background-color: #eee;
+    width: 55%;
+    margin: 0 auto;
+    padding: 10px 20px;
+    position: absolute;
+    text-align: center;
+    z-index:1000;
+}
+
+.tuples {
+    clear: both;
+    padding-bottom: 10px;
+}
+
+.tuples p {
+    //float: left;
+    padding: 0px 5px;
+    margin: 5px 0px;
+}
+
+.tuples p:last-child {
+    font-weight: 500;
+}
+
+.results-container-2 {
+    display: block;
+    padding-top: 150px;
+
+    width: 55%;
+    margin: 0 auto;
+    padding: 250px 20px 10px 20px;
+    position: absolute;
+    text-align: center;
+}
+
+.results-container-2 div.scan-results {
+	text-align: center;
+}
+
+input[name="nValue"] {
+    padding: 10px;
+}
+
+

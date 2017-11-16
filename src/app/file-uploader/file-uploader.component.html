@@ -1,0 +1,21 @@
+<p>
+	<input type=file class="file-path-button" name="files" id="files" (change)="setPath($event)"><br>
+	<label for="files" class="file-path-button">Choose a file</label>
+	<br>
+	<!--<input type="text" name="nValue" [(ngModel)]="nValue"/>
+
+	<input type=file class="file-path-button" name="modified" id="modified" (change)="getModifiedNames($event)">
+	<label class="file-path-button" (click)="getModifiedNames($event)">Get Modified Names</label>-->
+</p>
+<div class="results-container">
+	<div id="progress_bar"><div class="percent">0%</div></div>
+	<div id="fullNameCount" class="scan-results"><h2>{{ fullNamesLength }}</h2><p>Unique full names</p></div>
+	<div id="lastNameCount" class="scan-results"><h2>{{ lastNamesLength }}</h2><p>Unique last names</p></div>
+	<div id="firstNameCount" class="scan-results"><h2>{{ firstNamesLength }}</h2><p>Unique first names</p></div>
+</div>
+<div class="results-container-2">
+	<div id="fullNameCount" class="scan-results-2"><p>10 Most Common Last Names</p><div *ngFor="let tuple of lastNameTuples" class="tuples"><p>{{ tuple[0] }}</p><p>{{ tuple[1] }}</p></div></div>
+	<div id="lastNameCount" class="scan-results-2"><p>10 Most Common First Names</p><div *ngFor="let tuple of firstNameTuples" class="tuples"><p>{{ tuple[0] }}</p><p>{{ tuple[1] }}</p></div></div>
+	<div id="firstNameCount" class="scan-results-2"><p>25 Unique Names</p><div *ngFor="let uniqueName of uniqueNames" class="tuples"><p>{{ uniqueName }}</p></div></div>
+	<div id="modifiedName" class="scan-results-2"><p>25 Modified Names</p><div *ngFor="let modifiedName of modifiedNames" class="tuples"><p>{{ modifiedName }}</p></div></div>
+</div>
